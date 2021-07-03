@@ -1,0 +1,20 @@
+$color-primary-dark: #769c27;
+
+.sign-in {
+  position: relative;
+  z-index: 1300;
+  margin-top: 13rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-primary-dark;
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+  }
+}

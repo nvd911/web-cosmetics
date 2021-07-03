@@ -1,0 +1,41 @@
+$color-primary: rgb(196, 226, 170);
+$color-primary-dark: #769c27;
+
+.cart-pages {
+  padding: 10% 1% 2% 1%;
+  box-sizing: border-box;
+  &__title {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem lightgray;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    background-color: $color-primary;
+    font-size: 5rem;
+    text-shadow: 0.1rem 0.1rem $color-primary-dark;
+    color: $color-primary-dark;
+  }
+
+  &__top {
+    font-size: 2rem;
+  }
+
+  &__btn {
+    padding: 1% !important;
+    margin: 2rem 8% 2rem 2rem;
+    font-size: 2rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 589px) {
+  .cart-pages {
+    &__top {
+      font-size: 1.2rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}

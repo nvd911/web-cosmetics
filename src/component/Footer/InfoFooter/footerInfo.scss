@@ -1,0 +1,42 @@
+$color-primary-dark: #769c27;
+$color-primary: #daf79b;
+$color-lightgray: lightgray;
+$color-white: white;
+
+.footer-info {
+  margin-top: 5%;
+  margin-bottom: 2%;
+
+  &__title {
+    color: $color-white;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    color: $color-primary-dark;
+    list-style: none;
+  }
+
+  &__link {
+    color: #769c27;
+    text-shadow: 0.1rem 0.1rem $color-lightgray;
+  }
+
+  &__link:hover {
+    color: $color-primary-dark;
+  }
+}
+
+@media (max-width: 415px) {
+  .footer-info {
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__item {
+      font-size: 1.2rem;
+    }
+  }
+}

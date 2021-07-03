@@ -1,0 +1,34 @@
+$color-primary-dark: #769a5a;
+$color-primary: #daf79b;
+$color-lightgray: lightgray;
+$color-white: white;
+
+.end-footer {
+  background-color: $color-primary-dark;
+  display: flex;
+
+  &__left,
+  &__right {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    color: $color-white;
+    text-align: center;
+    width: 50%;
+  }
+
+  &__image {
+    width: 60%;
+  }
+}
+
+@media (max-width: 415px) {
+  .end-footer {
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}

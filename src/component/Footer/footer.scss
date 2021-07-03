@@ -1,0 +1,15 @@
+$color-primary-dark: #769c27;
+$color-primary: #c4e2aa;
+$color-lightgray: lightgray;
+$color-white: white;
+
+.footer {
+  &__main {
+    padding-top: 5%;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

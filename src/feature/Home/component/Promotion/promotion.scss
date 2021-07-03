@@ -1,0 +1,48 @@
+$color-primary-dark: #769a59;
+
+.promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-primary-dark;
+  margin-top: 2rem;
+  height: 10rem;
+  width: 60%;
+
+  &__chat {
+    font-size: 4rem;
+    margin-left: 1rem;
+    color: white;
+    text-shadow: 0.1rem 0.1rem lightgray;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    color: white;
+    text-align: center;
+  }
+
+  &__size-1 {
+    background-color: rgb(238, 236, 236);
+    color: $color-primary-dark;
+  }
+
+  &__size-2 {
+    background-color: rgb(238, 236, 236);
+    color: coral;
+  }
+}
+
+@media (max-width: 415px) {
+  .promotion {
+    &__chat {
+      font-size: 2rem;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+    }
+  }
+}

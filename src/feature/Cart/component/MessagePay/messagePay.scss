@@ -1,0 +1,14 @@
+.message-pay {
+  margin-top: 3rem;
+  &__text {
+    font-size: 3rem;
+  }
+  &__item {
+    font-size: 1.6rem;
+  }
+
+  &__freeShip {
+    font-size: 1.3rem;
+    color: red;
+  }
+}

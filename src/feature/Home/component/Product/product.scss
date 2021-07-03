@@ -1,0 +1,172 @@
+$color-primary-dark: #769a59;
+$color-lightgray: lightgray;
+$color-white: white;
+$color-dark: #000000;
+
+.product {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    width: 25rem;
+    position: relative;
+    border: 0.1rem solid $color-lightgray;
+    transition: all 0.3s;
+  }
+
+  &__btn,
+  &__link {
+    opacity: 0;
+    position: absolute;
+    top: 19rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin-left: 0.2rem;
+    width: 25rem;
+    border: none;
+    transition: 0.3s;
+    z-index: 100;
+
+    border-radius: 0.2rem;
+    text-align: center;
+
+    color: $color-white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0.1rem 0.1rem $color-lightgray;
+    background-color: $color-primary-dark;
+  }
+
+  &__image:hover ~ &__btn {
+    cursor: pointer;
+    opacity: 1;
+    top: 18.5rem;
+  }
+
+  &__image:hover ~ &__link {
+    cursor: pointer;
+    opacity: 1;
+    text-align: center;
+  }
+
+  &__image:hover {
+    transform: translateY(-0.5rem);
+  }
+
+  &__btn:hover,
+  &__link:hover {
+    text-align: center;
+    color: $color-white;
+    text-decoration: none;
+    opacity: 1;
+    background-color: $color-dark;
+  }
+
+  &__name {
+    display: block;
+    font-size: 1.6rem;
+    color: $color-dark;
+    padding: 3% 0;
+    height: 8rem;
+    text-align: center;
+  }
+
+  &__name:hover {
+    color: $color-primary-dark;
+  }
+
+  &__price {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: $color-primary-dark;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 1206px) {
+  .product {
+    &__name {
+      margin-right: 20%;
+      margin-left: 20%;
+      margin-bottom: 2rem;
+    }
+    &__btn {
+      top: 18.5rem;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .product {
+    &__name {
+      margin-right: 10rem;
+    }
+    &__btn:hover {
+      opacity: 1;
+      background-color: $color-primary-dark;
+    }
+  }
+}
+
+@media (max-width: 988px) {
+  .product {
+    &__name {
+      margin-right: 5rem;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .product {
+    &__name {
+      margin-right: 20%;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .product {
+    &__name {
+      margin-right: 30%;
+      margin-left: 30%;
+    }
+
+    &__btn {
+      top: 18.5rem;
+    }
+
+    &__img {
+      padding-left: 15rem;
+    }
+  }
+}
+
+@media (max-width: 668px) {
+  .product {
+    &__name {
+      margin-right: 30%;
+      margin-left: 30%;
+    }
+
+    &__price {
+      margin-top: -2rem;
+    }
+  }
+}
+
+@media (max-width: 592px) {
+  .product {
+    margin-left: 0rem;
+
+    &__name {
+      height: 40%;
+      width: 80%;
+    }
+    &__price {
+      margin-left: -5rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+$color-primary-dark: #769c27;
+$color-lightgray: lightgray;
+
+.contact-footer {
+  margin-top: 6.5rem;
+  box-sizing: border-box;
+  padding-left: 8% !important;
+  &__text {
+    font-size: 1.8rem;
+  }
+
+  &__link {
+    color: $color-primary-dark;
+    font-weight: 600;
+    text-shadow: 0.1rem 0.1rem $color-lightgray;
+  }
+
+  &__link:hover {
+    color: $color-primary-dark;
+  }
+}
+
+@media (max-width: 415px) {
+  .contact-footer {
+    &__text {
+      font-size: 1.2rem;
+      margin-left: 10%;
+    }
+  }
+}

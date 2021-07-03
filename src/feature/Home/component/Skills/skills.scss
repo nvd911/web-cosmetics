@@ -1,0 +1,41 @@
+$color-primary-dark: #769b57;
+$color-lightgray: lightgray;
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  &__icon1 {
+    font-size: 5rem;
+    color: $color-primary-dark;
+    text-shadow: 0.2rem 0.2rem $color-lightgray;
+  }
+
+  &__icon2,
+  &__icon--t {
+    font-size: 3rem;
+    color: #769c27;
+    text-shadow: 0.2rem 0.2rem $color-lightgray;
+    margin-top: 1.5rem;
+  }
+
+  &__icon--t {
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    color: #769c27;
+    text-shadow: 0.2rem 0.2rem $color-lightgray;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    &__icon1 {
+      font-size: 4rem;
+    }
+  }
+}

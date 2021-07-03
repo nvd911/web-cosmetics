@@ -1,0 +1,60 @@
+$color-primary: #daf79b;
+$color-primary-light: #e1f7b3;
+$color-primary-dark: #769c27;
+$color-lightgray: lightgray;
+$color-white: white;
+$color-dark: #333333;
+.button {
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__list {
+    opacity: 1;
+    transform: translateY(1%);
+    height: 100%;
+  }
+
+  &__btn {
+    padding: 2rem 4rem;
+    width: 26rem;
+    font-size: 2rem;
+    color: $color-dark;
+    background-color: #f6f6f6;
+    position: relative;
+  }
+
+  &__btn:hover {
+    color: $color-white;
+    background-color: $color-primary-dark;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-left: -4rem;
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s;
+    margin-left: 4rem;
+  }
+
+  &__all {
+    font-size: 1.7rem;
+    color: $color-primary-dark;
+    margin-left: 0rem;
+  }
+
+  &__item {
+    font-size: 1.7rem;
+    color: $color-primary-dark;
+  }
+
+  &__item:hover {
+    color: $color-primary-dark;
+  }
+
+  &__icon {
+    padding-right: 3rem;
+  }
+}

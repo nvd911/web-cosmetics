@@ -1,0 +1,17 @@
+$color-primary-dark: #769c27;
+
+.form__pay {
+  color: $color-primary-dark;
+  margin-top: 3%;
+  margin-left: 10%;
+
+  &__main {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    padding: 1rem 4rem !important;
+    margin: 2rem 8% 2rem 0;
+  }
+}

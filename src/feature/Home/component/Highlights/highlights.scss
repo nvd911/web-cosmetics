@@ -1,0 +1,32 @@
+$color-primary: #d2f881;
+$color-primary-light: #e1f7b3;
+$color-primary-dark: #769c27;
+
+.highlights {
+  margin-top: 4%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__image {
+    height: 18rem;
+    width: 15rem;
+    transition: all 0.3s;
+  }
+
+  &__image:hover {
+    transform: translateY(0.5rem);
+  }
+
+  &__text:hover {
+    transform: translateX(0.2rem);
+  }
+
+  &__text {
+    text-align: center;
+    transition: all 0.3s;
+    font-size: 1.7rem;
+    color: $color-primary-dark;
+  }
+}

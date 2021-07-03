@@ -1,0 +1,24 @@
+.share-container {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+  }
+
+  &--text1 {
+    text-align: center;
+    color: rgb(126, 126, 133);
+    font-size: 2.2rem;
+    text-shadow: 0.1rem 0.1rem lightgray;
+  }
+
+  &--text2 {
+    text-align: center;
+    color: rgb(59, 59, 61);
+    font-size: 3rem;
+    font-weight: 200;
+    text-shadow: 0.1rem 0.1rem lightgray;
+  }
+}
